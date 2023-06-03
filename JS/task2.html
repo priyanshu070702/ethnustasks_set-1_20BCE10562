@@ -1,0 +1,43 @@
+<!-- Submitted by: -->
+<!-- Khushi Ojha (20BHI10053) -->
+<!-- VIT BHOPAL UNIVERSITY -->
+<!-- Task 2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <script>
+        function changeData(){
+            var main = document.getElementById("main");
+            console.log(main.innerHTML)
+            var linktag = document.getElementById("linkpage");
+            var button = document.getElementById("linkbutton")
+            if(main.innerHTML==="Page 1"){
+                main.innerHTML = 'Page 2'
+                linktag.innerHTML = 'Page 3'
+                button.innerHTML = "Next"
+            }
+            else if(main.innerHTML==="Page 2"){
+                main.innerHTML = 'Page 3'
+                linktag.innerHTML = 'Page 2'
+                button.innerHTML = "Previous"
+            }
+            else if(main.innerHTML==="Page 3"){
+                main.innerHTML = 'Page 2'
+                linktag.innerHTML = 'Page 3'
+                button.innerHTML = "Next"
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h1 id="main">Page 1</h1>
+    <a href="" target="_self"  id="linkpage">Page 2</a><br>
+    <button id="linkbutton" onclick="changeData()">Next</button>
+</body>
+</html>

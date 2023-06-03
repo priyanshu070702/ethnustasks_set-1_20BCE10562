@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html_Task_4</title>
+  </head>
+  <style>
+    div {
+      border: 1px solid black;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 700px;
+      padding-left: 5px;
+      padding-bottom: 5px;
+      background-color: #dde6ed;
+    }
+  </style>
+  <body>
+    <div>
+      <p>Click any of the following links</p>
+      <a href="#" target="_blank">Opens in New</a> |
+      <a
+        href="#"
+        onclick="window.open('#', '_blank', 'width=800,height=600'); return false;"
+        >Opens in Self</a
+      >
+      |
+      <a
+        href="#"
+        onclick="window.open('#', '_blank', 'resizable=yes,scrollbars=yes'); return false;"
+        >Opens in Parent</a
+      >
+      |
+      <a
+      href="#"
+      onclick="window.open('#', '_blank', 'resizable=yes,scrollbars=yes'); return false;"
+      >Opens in Body</a
+    >
+    </div>
+  </body>
+</html>
